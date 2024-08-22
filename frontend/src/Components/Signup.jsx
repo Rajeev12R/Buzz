@@ -26,7 +26,7 @@ const Signup = () => {
           withCredentials: true,
         });
         if(res.data.success)
-          navigate("/login")
+          navigate("/login");
           toast.success(res.data.message);
     } catch (error) {
       console.log(error)
@@ -42,7 +42,7 @@ const Signup = () => {
 
   return (
     <>
-      <div className=''>
+      <div className='flex h-screen items-center justify-center'>
         <div className='w-full rounded-[10px] p-8 shadow-md bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100'>
           <h1 className='text-3xl font-semibold text-center'>Signup</h1>
           <br />
@@ -99,7 +99,6 @@ const Signup = () => {
                     type="checkbox"
                     checked={user.gender === "male"}
                     onChange={()=> handleCheckbox("male")}
-                    defaultChecked
                     className='w-4 h-4 radio-blue'
                   />
                   <label htmlFor='male' className='ml-2 text-base label-text'>
@@ -111,7 +110,6 @@ const Signup = () => {
                     type='checkbox'
                     checked={user.gender === "female"}
                     onChange={()=> handleCheckbox("female")}
-                    defaultChecked
                     className='w-4 h-4 radio-pink'
                   />
                   <label htmlFor='female' className='ml-2 text-base label-text'>

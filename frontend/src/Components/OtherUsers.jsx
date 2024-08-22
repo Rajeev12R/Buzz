@@ -1,9 +1,8 @@
 import React from "react"
 import OtherUser from "./OtherUser"
-
 const OtherUsers = () => {
   return (
-      <div className="overflow-auto">
+      <div className="scrollbar overflow-auto">
         <OtherUser/>
         <OtherUser/>
         <OtherUser/>

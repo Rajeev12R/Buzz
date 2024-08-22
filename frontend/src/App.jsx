@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <div className="h-screen flex items-center justify-center" >
+      <div className="flex items-center justify-center" >
         <RouterProvider router={router}/>
 
       </div>

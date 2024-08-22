@@ -38,8 +38,8 @@ const Login = () => {
   }
   return (
     <>
-      <div className=''>
-        <div className='w-full rounded-[10px] p-8 shadow-md bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100'>
+      <div className='h-screen flex items-center justify-center'>
+        <div className='w-full  rounded-[10px] p-8 shadow-md bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-3xl bg-opacity-10 border border-gray-100'>
           <h1 className='text-3xl font-semibold text-center'>Login</h1>
           <br />
           <form action='' onSubmit={onSubmitHandler} className=''>

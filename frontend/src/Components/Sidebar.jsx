@@ -4,6 +4,7 @@ import OtherUsers from './OtherUsers';
 
 
 
+
 const Sidebar = () => {
   return (
     <div className='border p-4 rounded-md border-zinc-400 flex flex-col'>
