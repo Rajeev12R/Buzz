@@ -34,7 +34,7 @@ const MessageContainer = () => {
       ) : (
         <>
         <div className="md:min-w-[550px] lg:w-screen flex flex-col items-center justify-center">
-          <h1 className="text-2xl p-2 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Hi, {authUser?.fullName}</h1> 
+          <h1 className="text-2xl p-2 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent font-bold">Hi, {authUser?.fullName}</h1> 
         <h1 className="text-3xl bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent p-2">Let's Start Chit-Chat </h1>
         </div>
         </>

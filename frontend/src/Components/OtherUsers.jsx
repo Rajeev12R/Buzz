@@ -7,18 +7,18 @@ const OtherUsers = () => {
   // Custom hook
   useGetOtherUsers();
 
-  const { OtherUsers = [] } = useSelector(store => store.user); // Default to empty array
+  const { otherUsers = [] } = useSelector(store => store.user); // Default to empty array
 
-  console.log(typeof OtherUsers); // Debug: check the type
-  console.log(Array.isArray(OtherUsers)); // Debug: check if it's an array
+  console.log(typeof otherUsers); // Debug: check the type
+  console.log(Array.isArray(otherUsers)); // Debug: check if it's an array
 
-  if (!Array.isArray(OtherUsers)) {
+  if (!Array.isArray(otherUsers)) {
     return; // Fallback UI if not an array
   }
 
   return (
     <div className="overflow-auto flex-1">
-      {OtherUsers.map(user => (
+      {otherUsers.map(user => (
         <OtherUser key={user._id} user={user} />
       ))}
     </div>
